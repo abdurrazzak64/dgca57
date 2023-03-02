@@ -45,6 +45,14 @@
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
 
+    <!-- custom nivo  -->
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Nivo-Slider-jQuery-master/demo/stylee.css" type="text/css" media="screen" />
+
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/sopot.css" />
     <link rel="stylesheet" href="assets/css/sopot-responsive.css" />
@@ -185,9 +193,21 @@
         </div><!-- /.stricky-header -->
 
         <!--Main Slider Start-->
-            <!--Main Slider nivo Start-->
-            
-            <!--Main Slider nivo End-->
+        
+            <section class="main-slider">
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img class="img-fluid" src="assets/images-2/backgrounds/sbg1.jpg" data-thumb="assets/images-2/backgrounds/sbg1.jpg" alt="" />
+                        <img class="img-fluid" src="assets/images-2/backgrounds/sbg2.jpg" data-thumb="assets/images-2/backgrounds/sbg2.jpg" alt=""/>
+                        <img class="img-fluid" src="assets/images-2/backgrounds/sbg3.jpg" data-thumb="assets/images-2/backgrounds/sbg3.jpg" alt="" data-transition="slideInLeft" />
+                        <img class="img-fluid" src="assets/images-2/backgrounds/sbg1.jpg" data-thumb="assets/images-2/backgrounds/sbg1.jpg" alt="" title="#htmlcaption" />
+                    </div>
+                    <!-- <div id="htmlcaption" class="nivo-html-caption">
+                        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                    </div> -->
+                </div>
+            </section>
+        
         <!--Main Slider End-->
 
 
@@ -1416,6 +1436,15 @@
 
     <!-- template js -->
     <script src="assets/js/sopot.js"></script>
+    
+    <!-- nivo slider js part  -->
+    <script type="text/javascript" src="Nivo-Slider-jQuery-master/demo/scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="Nivo-Slider-jQuery-master/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
 </body>
 
 </html>
