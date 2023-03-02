@@ -1107,11 +1107,6 @@
         padding-bottom: 200px;
     }
 
-
-
-
-
-
 }
 
 
@@ -1171,12 +1166,10 @@
         padding: 42px 0;
     }
 
-
-
-
-
-
-
-
-
 }
+/* navigation bar  custom css  */
+@media (max-width: 767px){
+    .main-menu-wrapper__right {
+      padding: 0 0px;
+    }
+    }

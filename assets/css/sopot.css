@@ -9918,7 +9918,7 @@ ul {
 
 /* main slider top  */
 .main-slider{
-    height: 400px;
+    height: 100%;
 }
 .main-slider .container {
     position: relative;
@@ -9926,3 +9926,49 @@ ul {
     padding-bottom: 0;
     z-index: 30;
 }
+/* navigation icon remove part  */
+.main-menu .main-menu__list > li.dropdown > a::after {
+    position: absolute;
+    top: 1px;
+    right: -16px;
+    font-family: 'icomoon' !important;
+    content: none;
+    font-size: 12px;
+    transition: transform 500ms ease;
+    z-index: 1;
+  }
+  .main-menu .main-menu__list{
+    position: relative;
+  }
+  .main-menu .main-menu__list::before {
+    position: absolute;
+    content: "Promoting ICAO Gender Equality Programe in conjuction with Next Generation of Aviation Professionals (NGAP) initiative";
+    bottom: 55px;
+    left: 75px;
+    letter-spacing: -1.5px;
+    line-height: 1.2;
+    color: #565656;
+  }
+  .main-menu .main-menu__list {
+    position: relative;
+    padding-top: 20px;
+  }
+  .main-menu .main-menu__list > li, .stricky-header .main-menu__list > li {
+    padding-top: 42px;
+    padding-bottom: 16px;
+    position: relative;
+  }
+  /* bg image  of section */
+  /* section{
+    background-image: url('../images-2/backgrounds/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  .up-comming-events {
+    position: relative;
+    display: block;
+    margin-top: -15px !important;
+    z-index: 10;
+  }
+
+  
